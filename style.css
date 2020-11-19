@@ -1,0 +1,240 @@
+/*Global Styling*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Merriweather", serif;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+
+p,
+li,
+input,
+label,
+span {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*Navigation Styling*/
+
+.home-heading {
+  background: #000000;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  color: #ffffff;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  flex: 1 1 40rem;
+}
+
+.home {
+  background-image: linear-gradient(#000000, transparent),
+    url("./images/bg.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.home h1 {
+  font-size: 6rem;
+  font-family: "Poppins-bold", sans-serif;
+}
+.home h2 {
+  font-family: "Poppins-medium", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.home h3 {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/*About-Me Section Styling*/
+
+.about-me {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.aboutme-header {
+  margin: 3rem;
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+.about {
+  padding: 4rem;
+  margin: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+}
+
+.about img {
+  display: flex;
+  margin: 5rem;
+}
+
+/*Profile and Skills Section*/
+
+#profile {
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  width: 90%;
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+.myprofile {
+  line-height: 5rem;
+  flex: 1 1 40rem;
+}
+
+.myskills {
+  line-height: 5rem;
+  flex: 1 1 40rem;
+}
+/*Contact Section Styling*/
+
+#contact {
+  background-color: #000000;
+  color: white;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  text-align: center;
+}
+.form-header {
+  text-transform: uppercase;
+}
+
+span {
+  color: #888888;
+}
+input {
+  width: 50%;
+  padding: 1.2rem;
+  border: none;
+  margin: 0.3rem;
+  font-family: "Poppins", sans-serif;
+}
+textarea {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  margin: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+input[type="submit"] {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+/*Footer Styling*/
+
+footer {
+  color: white;
+  background: rgb(0, 0, 0);
+  flex-wrap: wrap;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+    padding: 2rem;
+    line-height: 4rem;
+  }
+  nav h3 {
+    font-size: 2.5rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
